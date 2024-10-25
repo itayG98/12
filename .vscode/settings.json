@@ -3,7 +3,10 @@
         "stdio.h": "c",
         "limits.h": "c",
         "stdlib.h": "c",
-        "char_helper.h": "c"
+        "char_helper.h": "c",
+        "adjacency_types.h": "c",
+        "adjmant_types.h": "c",
+        "adjacency_utils.h": "c"
     },
     "files.exclude": {
         "**/*.exe": true,
