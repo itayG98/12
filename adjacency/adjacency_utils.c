@@ -2,19 +2,17 @@
 #include "adjmant_types.h"
 #include "adjacency_utils.h"
 
-int main()
+void print_matrix(Adjmant arr)
 {
-    BOOLEAN b = 1;
-    Adjmant a;
-    int i = 0, j = 0;
+    int i, j;
+    i = j = 0;
+    printf("Matrix:\n");
     for (i = 0; i < N; i++)
     {
         for (j = 0; j < N; j++)
         {
-            a.array[i][j] = i * j;
+            printf("%3d ", arr.array[i][j]);
         }
+        printf("\n");
     }
-    print_matrix(a);
-    scanf("%d", &b);
-    return 1;
 }
