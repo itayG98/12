@@ -3,7 +3,7 @@
 
 void print_matrix(Adjmant arr);
 
-Boolean validate_indexes(int u, int v);
+Boolean validate_index(int index);
 
 Boolean path(Adjmant adj, int u, int v);
 

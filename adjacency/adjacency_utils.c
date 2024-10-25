@@ -17,9 +17,9 @@ void print_matrix(Adjmant arr)
     }
 }
 
-Boolean validate_indexes(int u, int v)
+Boolean validate_index(int index)
 {
-    if (u == EOF || v == EOF || u == -1 || v == -1)
+    if (index >= N || index < 0)
     {
         return FALSE;
     }
