@@ -15,6 +15,7 @@ void print_matrix(Adjmant arr)
         }
         printf("\n");
     }
+    printf("\n");
 }
 
 Boolean validate_index(int index)

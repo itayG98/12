@@ -7,7 +7,7 @@ CC = gcc
 TARGET = adjacency
 
 # Source files
-SRCS = adjacency.c adjacency_utils.c adjmant_types.h
+SRCS = adjacency.c adjacency_utils.c 
 
 # Object files
 OBJS = $(SRCS:.c=.o)
