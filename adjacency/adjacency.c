@@ -21,18 +21,26 @@ int main()
     }
     print_matrix(adj);
 
-    printf("Enter start index: ");
-    scanf("%d", &start_index);
-
-    printf("Enter end index: ");
-    scanf("%d", &end_index);
-
-    flag = validate_index(start_index) && validate_index(end_index) ? TRUE : FALSE;
-    if (flag)
+    while (flag == TRUE)
     {
-        res = path(adj, start_index, end_index);
-        printf("Path exists: %s\n", res ? "true" : "false");
-    }
+        printf("Enter start index: \n");
+        if (scanf("%d", &start_index) != 1)
+        {
+            flag = FALSE;
+        }
+        printf("Enter end index: \n");
+        if (flag && scanf("%d", &end_index) != 1)
+        {
+            flag = FALSE;
+        }
 
+        flag = flag && validate_index(start_index) && validate_index(end_index) ? TRUE : FALSE;
+        if (flag)
+        {
+            res = path(adj, start_index, end_index);
+            printf("\nCheck path from : %d to %d...\n", start_index, end_index);
+            printf("Path exists: %s\n", res ? "true" : "false");
+        }
+    }
     return 0;
 }

@@ -1,7 +1,7 @@
 #ifndef ADJMANT_TYPES_H
 #define ADJMANT_TYPES_H
 
-#define N 2
+#define N 11
 
 typedef enum
 {
