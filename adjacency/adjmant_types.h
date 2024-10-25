@@ -1,17 +1,17 @@
 #ifndef ADJMANT_TYPES_H
 #define ADJMANT_TYPES_H
 
-#define N 10
+#define N 5
 
 typedef enum
 {
     FALSE = 0,
     TRUE = 1
-} BOOLEAN;
+} Boolean;
 
 typedef struct
 {
-    int array[N][N];
+    short array[N][N];
 } Adjmant;
 
 #endif

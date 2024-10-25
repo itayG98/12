@@ -6,7 +6,7 @@ void print_matrix(Adjmant arr)
 {
     int i, j;
     i = j = 0;
-    printf("Matrix:\n");
+
     for (i = 0; i < N; i++)
     {
         for (j = 0; j < N; j++)
@@ -15,4 +15,22 @@ void print_matrix(Adjmant arr)
         }
         printf("\n");
     }
+}
+
+Boolean path(Adjmant adj, int u, int v)
+{
+    int i = 0;
+    if (u == v)
+    {
+        return TRUE;
+    }
+    while (i < N)
+    {
+        if (adj.array[u][i] == 1 && path(adj, i, v))
+        {
+            return TRUE;
+        }
+        i++;
+    }
+    return FALSE;
 }

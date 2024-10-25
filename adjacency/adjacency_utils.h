@@ -3,4 +3,6 @@
 
 void print_matrix(Adjmant arr);
 
+Boolean path(Adjmant adj, int u, int v);
+
 #endif

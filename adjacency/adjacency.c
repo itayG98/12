@@ -4,9 +4,8 @@
 
 int main()
 {
-    BOOLEAN b = 1;
     Adjmant a;
-    int i = 0, j = 0;
+    int i = 0, j = 0, temp = 0;
     for (i = 0; i < N; i++)
     {
         for (j = 0; j < N; j++)
@@ -15,6 +14,7 @@ int main()
         }
     }
     print_matrix(a);
-    scanf("%d", &b);
+    printf("%d", path(a, 1, 5));
+    scanf("%d", &i);
     return 1;
 }
