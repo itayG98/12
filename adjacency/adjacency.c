@@ -4,17 +4,35 @@
 
 int main()
 {
-    Adjmant a;
-    int i = 0, j = 0, temp = 0;
-    for (i = 0; i < N; i++)
+    Adjmant adj;
+    Boolean flag = TRUE, res = FALSE;
+    int i, j, start_index, end_index;
+    i = j = start_index = end_index = 0;
+
+    while (flag)
     {
-        for (j = 0; j < N; j++)
+        for (i = 0; i < N; i++)
         {
-            a.array[i][j] = i * j;
+            for (j = 0; j < N; j++)
+            {
+                printf("\nEnter value for position (%d, %d) : ", i, j);
+                scanf("%d", &adj.mat[i][j]);
+            }
+        }
+        print_matrix(adj);
+
+        printf("Enter start index: ");
+        scanf("%d", &start_index);
+
+        printf("Enter end index: ");
+        scanf("%d", &end_index);
+
+        flag = validate_indexes(start_index, end_index);
+        if (flag)
+        {
+            res = path(adj, start_index, end_index);
+            printf("Path exists: %s\n", res ? "true" : "false");
         }
     }
-    print_matrix(a);
-    printf("%d", path(a, 1, 5));
-    scanf("%d", &i);
-    return 1;
+    return 0;
 }
