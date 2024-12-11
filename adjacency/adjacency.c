@@ -28,7 +28,7 @@ int main()
     i = j = start_index = end_index = 0;
 
     printf("\nEnter value for %dX%d matrix \n", N, N);
-
+    // iterate and prompt the user for number
     for (i = 0; i < N; i++)
     {
         for (j = 0; j < N; j++)
@@ -63,6 +63,7 @@ int main()
         {
             printf("\nCheck path from : %d to %d...\n", start_index, end_index);
             printf("Path exists: %s\n", "false");
+            // Reset flag
             flag = TRUE;
         }
     }
