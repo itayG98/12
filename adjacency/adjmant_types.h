@@ -10,6 +10,7 @@ typedef enum
     TRUE = 1
 } Boolean;
 
+/*A struct representing the graph structure connection using a matrix*/
 typedef struct
 {
     int mat[N][N];
