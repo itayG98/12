@@ -19,8 +19,6 @@
  *    - Check if a path exists between the specified nodes using the `path` function.
  *    - Display the result.
  * 4. Exit the loop if invalid input is encountered.
- *
- * @return int Returns 0 on successful execution.
  */
 int main()
 {
