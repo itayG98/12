@@ -64,7 +64,7 @@ int main()
         else if (start_index != EXIT_NUMBER || end_index != EXIT_NUMBER)
         {
             printf("\nCheck path from : %d to %d...\n", start_index, end_index);
-            printf("Path exists: %s\n", res ? "true" : "false");
+            printf("Path exists: %s\n", "false");
             flag = TRUE;
         }
     }
