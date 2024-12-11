@@ -2,6 +2,7 @@
 #define ADJMANT_TYPES_H
 
 #define N 11
+#define EXIT_NUMBER -1
 
 typedef enum
 {
