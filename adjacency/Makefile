@@ -7,10 +7,10 @@ CC = gcc
 TARGET = adjacency
 
 # Source files
-SRCS = adjacency.c adjacency_utils.c 
+SRCS = adjacency.c adjacency_utils.c
 
 # Object files
-OBJS = $(SRCS:.c=.o)
+OBJS = adjacency.o adjacency_utils.o
 
 # Compilation flags
 CFLAGS = -Wall -ansi -pedantic
@@ -25,6 +25,10 @@ all: $(TARGET)
 debug: CFLAGS += $(DEBUG_FLAGS)
 debug: $(TARGET)
 
+# Define dependencies for source files
+adjacency.o: adjacency.c adjmant_types.h
+adjacency_utils.o: adjacency_utils.c adjmant_types.h
+
 # Linking the object files to create the executable
 $(TARGET): $(OBJS)
 	$(CC) $(CFLAGS) -o $(TARGET) $(OBJS)
@@ -37,4 +41,4 @@ $(TARGET): $(OBJS)
 clean:
 	del /q $(OBJS) $(TARGET).exe
 
-.PHONY: clean all
+.PHONY: clean all debug

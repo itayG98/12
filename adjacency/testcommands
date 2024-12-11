@@ -1,0 +1,8 @@
+adjacency < inputs/input1 > outputs/res1
+adjacency < inputs/input2 > outputs/res2
+adjacency < inputs/input3 > outputs/res3
+adjacency < inputs/input4 > outputs/res4
+adjacency < inputs/input10_1 > outputs/res10_1
+adjacency < inputs/input10_2 > outputs/res10_2
+adjacency < inputs/input10_3 > outputs/res10_3
+adjacency < inputs/input10_4 > outputs/res10_4
