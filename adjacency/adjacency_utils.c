@@ -6,7 +6,7 @@ void print_matrix(Adjmant arr)
 {
     int i, j;
     printf("\n     ");
-    for (i = 0; i <= N; i++)
+    for (i = 0; i < N; i++)
     {
         printf("%4d ", i);
     }
@@ -30,7 +30,7 @@ void print_matrix(Adjmant arr)
 
 Boolean validate_index(int index)
 {
-    if (index >= N || index < 0)
+    if (index >= N || index < 0 || index == EOF)
     {
         return FALSE;
     }
