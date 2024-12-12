@@ -38,7 +38,7 @@ int main()
             if (scanf("%d", &adj.mat[i][j]) == EOF)
             {
                 printf("\nEOF reached before matrix setup. Exiting.\n");
-                return 1;
+                return 0;
             }
         }
     }

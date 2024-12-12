@@ -30,7 +30,7 @@ void print_matrix(Adjmant arr)
 
 Boolean validate_index(int index)
 {
-    if (index >= N || index < 0 || index == EOF)
+    if (index >= N || index < 0)
     {
         return FALSE;
     }
