@@ -18,7 +18,7 @@ void print_matrix(Adjmant arr)
     printf("\n");
     for (i = 0; i < N; i++)
     {
-        printf("%4d |", i + 1);
+        printf("%4d |", i);
         for (j = 0; j < N; j++)
         {
             printf("%4d ", arr.mat[i][j]);
